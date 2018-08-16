@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project(DisplayImage)
+find_package(OpenGL REQUIRED)
+include_directories(${OpenGL_INCLUDE_DIRS})
+add_executable(DisplayImage main.cpp)
+target_link_libraries(DisplayImage ${OpenGL_LIBS})
