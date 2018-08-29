@@ -11,6 +11,8 @@ function EasyLinux_Backup(){
 	cp -ru ${Home_Path}/.bashrc       ${EasyLinux_Path}/data
 	cp -ru ${Home_Path}/.vimrc        ${EasyLinux_Path}/data
 	cp -ru ${Home_Path}/.zshrc        ${EasyLinux_Path}/data
+	cp -ru ${Home_Path}/.oh-my-zsh    ${EasyLinux_Path}/data
+	cp -ru ${Home_Path}/.zsh_history  ${EasyLinux_Path}/data
 	cp -ru ${Home_Path}/WorkSpace/C/LearnOpenGL/CMakeLists.txt ${EasyLinux_Path}/data/OpenCV_CMake
 }
 

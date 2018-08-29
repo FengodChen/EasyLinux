@@ -1,4 +1,3 @@
-<a href="https://blog.csdn.net/robertsong2004/article/details/53979296" target="_blank">
 本文转载至：http://blog.csdn.net/zhangrelay/article/details/52244746
 目前，<em>ROS</em>使用的主流版本主要是下面四种：Hydro，Indig...</a>
 </p>
@@ -1998,3 +1997,4 @@ sudo apt install tlp
 sudo tlp bat
 airmode 
 exit
+android-studio&
