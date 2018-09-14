@@ -67,7 +67,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source .oh-my-zsh/plugins/incr/incr-0.2.zsh
+# source $ZSH/plugins/incr/incr-0.2.zsh
 
 # User configuration
 

@@ -1,62 +1,3 @@
-本文转载至：http://blog.csdn.net/zhangrelay/article/details/52244746
-目前，<em>ROS</em>使用的主流版本主要是下面四种：Hydro，Indig...</a>
-</p>
-<div class="info-box d-flex align-content-center">
-<p>
-<a class="avatar" src="https://blog.csdn.net/robertsong2004" title="robertsong2004" target="_blank">
-<img src="https://avatar.csdn.net/2/5/A/3_robertsong2004.jpg" alt="robertsong2004" class="avatar-pic">
-<span class="name">robertsong2004</span>
-</a>
-</p>
-<p>
-<span class="date">2017-01-02 15:38:03</span>
-</p>
-<p>
-<span class="read-num">阅读数：817</span>
-</p>
-</div>
-<div class="recommend-item-box csdn-tracking-statistics" data-mod="popu_387" data-poputype="feed" data-feed-show="false" data-dsm="post">
-<h4 class="text-truncate">
-<a href="https://blog.csdn.net/sfe1012/article/details/43487201" target="_blank" strategy="BlogCommendFromBaidu_10">
-<em>ROS</em> 源码安装方式</a>
-</h4>
-<p class="content">
-<a href="https://blog.csdn.net/sfe1012/article/details/43487201" target="_blank">
-ubuntu :
-sudo apt-get install python-<em>ros</em>dep python-<em>ros</em>install-generator python-wstool python-<em>ros</em>i...</a>
-</p>
-<div class="info-box d-flex align-content-center">
-<p>
-<a class="avatar" src="https://blog.csdn.net/sfe1012" title="sfe1012" target="_blank">
-<img src="https://avatar.csdn.net/B/5/A/3_sfe1012.jpg" alt="sfe1012" class="avatar-pic">
-<span class="name">sfe1012</span>
-</a>
-</p>
-<p>
-<span class="date">2015-02-04 16:21:49</span>
-</p>
-<p>
-<span class="read-num">阅读数：1372</span>
-</p>
-</div>
-<script src="https://nbrecsys.4paradigm.com/resource/js/sdk-csdn-smallflow.js" async="" defer=""></script>
-<h4 class="text-truncate">
-<a href="https://blog.csdn.net/heyijia0327/article/details/45841317" target="_blank" strategy="BlogCommendFromBaidu_11">
-<em>ROS</em> : 修改<em>ROS</em>源代码(overlaying package)</a>
-</h4>
-<p class="content">
-<a href="https://blog.csdn.net/heyijia0327/article/details/45841317" target="_blank">
-<em>ROS</em>官方或者其他个人提供了很多package供大家使用，但是随着学习的深入，很多人可能想去修改这些package的源代码，<em>ROS</em>提供了一种称之为overlaying的机制。它允许<em>ROS</em>原有安装的pa...</a>
-</p>
-<div class="info-box d-flex align-content-center">
-<p>
-<a class="avatar" src="https://blog.csdn.net/heyijia0327" title="heyijia0327" target="_blank">
-<img src="https://avatar.csdn.net/6/1/E/3_heyijia0327.jpg" alt="heyijia0327" class="avatar-pic">
-<span class="name">heyijia0327</span>
-</a>
-</p>
-<p>
-<span class="date">2015-05-19 14:42:31</span>
 </p>
 <p>
 <span class="read-num">阅读数：9318</span>
@@ -1998,3 +1939,62 @@ sudo tlp bat
 airmode 
 exit
 android-studio&
+exit
+./Shadowsocks-Qt5-3.0.1-x86_64.AppImage 
+ls
+sudo chmod a+x Shadowsocks-Qt5-3.0.1-x86_64.AppImage 
+./Shadowsocks-Qt5-3.0.1-x86_64.AppImage 
+fg
+exit
+sudo apt purge wine*
+sudo add-apt-repository ppa:wine/wine-builds
+sudo apt update 
+sudo apt-get install --install-recommends winehq-devel
+sudo dpkg --add-architecture i386 
+sudo apt update 
+wget -nc https://dl.winehq.org/wine-builds/Release.key
+sudo apt-key add Release.key
+sudo apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/
+sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
+sudo apt-get install --install-recommends winehq-devel
+ls
+cd WorkSpace/Lab/
+ls
+vim a.sh
+bash a.sh 
+chomod +x winetricks 
+chmod +x winetricks 
+ls
+./winetricks dlls gdiplus
+wine
+ls
+winecfg 
+cd
+cd /usr/share/application
+cd /usr/share/applications
+ls
+vim wine.desktop 
+sudo cp shenzhenIO.desktop AndroidStudio.desktop
+sudo vim AndroidStudio.desktop 
+sudo vim vim.desktop 
+sudo vim wine.desktop 
+su
+exit
+adb devices 
+adb connect
+adb help
+adb install AndroidStudioProjects/InfiniteCalculator/app/release/InfinteCalculator4.0.apk 
+adb connect
+adb devices 
+adb shell screencap 
+adb kill-server 
+adb devices 
+adb get-state 
+
+adb shell screencap 
+adb shell screencap > WorkSpace/a.png
+adb shell getprop persist.camera.HAL3.enabled
+adb shell setprop persist.camera.HAL3.enabled 1
+adb shell su
+adb shell
+exit
