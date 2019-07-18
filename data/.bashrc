@@ -116,13 +116,28 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# user code
+# User code
 
-alias android-studio='bash ~/Application/android-studio/bin/studio.sh'
 alias airmode='bluetooth off
-wifi off'
+               wifi off'
 alias ftpstart='sudo service vsftpd start'
+LD_LIBRARY_PATH=/usr/local/lib
+export LD_LIBRARY_PATH
+alias wine-stable='env LANG="zh_CN.UTF-8" wine-stable'
+alias wine='env LANG="zh_CN.UTF-8" wine-stable'
+alias wine64-stable='env LANG="zh_CN.UTF-8" wine64-stable'
+alias wine64='env LANG="zh_CN.UTF-8" wine64-stable'
+alias start-proxy='export http_proxy=http://127.0.0.1:1080
+                   export https_proxy=http://127.0.0.1:1080
+                   export ALL_PROXY=http://127.0.0.1:8118'
+alias stop-proxy='unset http_proxy
+                  unset https_proxy
+                  unset ALL_PROXY'
+alias connect-server='ssh root@59.110.222.136'
+alias ngrok='/home/fengodchen/Applications/ngrok-stable-linux-amd64/ngrok'
+alias ssh-ngrok='ngrok tcp 22'
 
-#Run Zsh
-#zsh
-#exit
+export PATH=$PATH:/usr/local/cuda/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
+export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/cuda/lib64
+export PATH="$PATH:$HOME/bin"
